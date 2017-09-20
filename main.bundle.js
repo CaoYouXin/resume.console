@@ -1933,7 +1933,7 @@ var TableComponent = (function () {
         return this.table.height[i];
     };
     TableComponent.prototype.tweakHeader = function (e, i) {
-        if (!e.ctrlKey) {
+        if (!e.altKey) {
             return;
         }
         if (null === i) {
@@ -1947,7 +1947,7 @@ var TableComponent = (function () {
         this.calcTotalWidth();
     };
     TableComponent.prototype.tweakData = function (e, i) {
-        if (!e.ctrlKey) {
+        if (!e.altKey) {
             return;
         }
         var _height = this.getHeight(i) - e.deltaY / 2;
